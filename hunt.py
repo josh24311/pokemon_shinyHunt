@@ -40,7 +40,7 @@ except Exception as e:
 
 # [函式] Discord 發送
 def send_discord_shiny(count, score, image_path):
-    webhook_url = "https://discord.com/api/webhooks/"
+    webhook_url = "YOUR_WEBHOOK_URL"
     message = f"**發現色違！**\n> 嘗試次數：第 `{count}` 次\n> 判定分數：`{score:.2f}`\n> 狀態：系統已物理煞車，請回家收成！"
     payload = {"content": message}
     try:
